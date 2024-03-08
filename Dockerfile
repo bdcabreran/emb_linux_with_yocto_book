@@ -31,5 +31,8 @@ WORKDIR /yocto
 # Switch to your non-root user
 USER devuser
 
+RUN git config --global user.email "bdcabreran@unal.edu.co" && \
+    git config --global user.name "bdcabreran"
+
 # Default command
 CMD ["/bin/bash"]
