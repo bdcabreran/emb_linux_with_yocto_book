@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
     gawk wget git-core diffstat unzip texinfo gcc-multilib \
     build-essential chrpath socat cpio python3 python3-pip python3-pexpect \
     xz-utils debianutils iputils-ping libsdl1.2-dev xterm \
-    locales sudo bash-completion command-not-found software-properties-common
+    locales sudo bash-completion command-not-found software-properties-common \
+    pylint3 python3-subunit mesa-common-dev python2.7 sudo nano gedit vim tree liblz4-tool zstd
 
 # Set the locale
 RUN locale-gen en_US.UTF-8
